@@ -1,4 +1,4 @@
 # SIT313---Project-1
 SIT313---Project-1
 
-All images belong to deakin university
+All images used in this app belong to Deakin University. Deakin.edu.au
