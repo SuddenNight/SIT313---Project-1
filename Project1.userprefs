@@ -1,0 +1,9 @@
+﻿<Properties StartupItem="Project1/Project1.csproj">
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Project1 PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E2EC0982-FBB5-4E3A-8138-97BE6A0D70B3" />
+</Properties>
