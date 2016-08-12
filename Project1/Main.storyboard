@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+    </dependencies>
+    <scenes>
+        <!--First-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModuleProvider="" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="127" translatesAutoresizingMaskIntoConstraints="NO" image="Deakin_Worldly_Logo.png">
+                                <rect key="frame" x="0.0" y="251" width="600" height="140"/>
+                                <constraints>
+                                    <constraint id="208" firstItem="127" firstAttribute="height" constant="140" priority="999"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Deakin Open Day" lineBreakMode="tailTruncation" minimumFontSize="10" id="128" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="center">
+                                <rect key="frame" x="0.0" y="159" width="600" height="32"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="165" firstItem="128" firstAttribute="height" constant="32"/>
+                                </constraints>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="185" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="550" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Info">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <action selector="UIButton185_TouchUpInside:" destination="9pv-A4-QxB" id="187" eventType="touchUpInside"/>
+                                    <segue id="642" destination="233" kind="show"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="194" firstItem="185" firstAttribute="height" constant="30"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="186" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="512" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="WebSite">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="195" firstItem="186" firstAttribute="height" constant="30"/>
+                                </constraints>
+                                <connections>
+                                    <segue id="275" destination="226" kind="show"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedRGB" red="0.42352941176470588" green="0.6705882352941176" blue="1" alpha="1"/>
+                        <constraints>
+                            <constraint id="164" firstItem="tsR-hK-woN" firstAttribute="centerY" secondItem="128" secondAttribute="centerY" constant="125"/>
+                            <constraint id="166" firstItem="128" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading"/>
+                            <constraint id="167" firstItem="128" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailing"/>
+                            <constraint id="191" firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="185" secondAttribute="bottom" constant="20"/>
+                            <constraint id="192" firstItem="tsR-hK-woN" firstAttribute="trailing" secondItem="185" secondAttribute="trailing" constant="20"/>
+                            <constraint id="193" firstItem="185" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="20"/>
+                            <constraint id="196" firstItem="185" firstAttribute="top" secondItem="186" secondAttribute="bottom" constant="8"/>
+                            <constraint id="197" firstItem="tsR-hK-woN" firstAttribute="trailing" secondItem="186" secondAttribute="trailing" constant="20"/>
+                            <constraint id="198" firstItem="186" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="20"/>
+                            <constraint id="204" firstItem="127" firstAttribute="top" secondItem="128" secondAttribute="bottom" constant="60"/>
+                            <constraint id="205" firstItem="186" firstAttribute="top" secondItem="127" secondAttribute="bottom" constant="121"/>
+                            <constraint id="206" firstItem="127" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailing"/>
+                            <constraint id="207" firstItem="127" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" image="First" id="acW-dT-cKf" title="Home"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-320"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModuleProvider="" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="173" translatesAutoresizingMaskIntoConstraints="NO" image="burwood-map.jpg">
+                                <rect key="frame" x="20" y="34" width="560" height="532"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.42352941176470588" green="0.6705882352941176" blue="1" alpha="1"/>
+                        <constraints>
+                            <constraint id="181" firstItem="173" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="14"/>
+                            <constraint id="182" firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="173" secondAttribute="bottom" constant="34"/>
+                            <constraint id="183" firstItem="QS5-Rx-YEW" firstAttribute="trailing" secondItem="173" secondAttribute="trailing" constant="20"/>
+                            <constraint id="184" firstItem="173" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="20"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" image="Second" id="cPa-gy-q4n" title="Map"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="755" y="482"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="551" width="600" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <scene sceneID="225">
+            <objects>
+                <viewController id="226" sceneMemberID="viewController" customClass="WebViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="223"/>
+                        <viewControllerLayoutGuide type="bottom" id="224"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="227">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedRGB" red="0.42352941176470588" green="0.6705882352941176" blue="1" alpha="1"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="321" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="550" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="433" firstItem="321" firstAttribute="height" constant="30"/>
+                                </constraints>
+                                <connections>
+                                    <segue id="527" destination="9pv-A4-QxB" kind="show"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" id="432" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="42" width="600" height="488"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="434" firstItem="224" firstAttribute="top" secondItem="321" secondAttribute="bottom" constant="20"/>
+                            <constraint id="435" firstItem="321" firstAttribute="leading" secondItem="227" secondAttribute="leading" constant="20"/>
+                            <constraint id="436" firstItem="227" firstAttribute="trailing" secondItem="321" secondAttribute="trailing" constant="20"/>
+                            <constraint id="437" firstItem="321" firstAttribute="top" secondItem="432" secondAttribute="bottom" constant="20"/>
+                            <constraint id="438" firstItem="432" firstAttribute="trailing" secondItem="227" secondAttribute="trailing"/>
+                            <constraint id="439" firstItem="432" firstAttribute="leading" secondItem="227" secondAttribute="leading"/>
+                            <constraint id="440" firstItem="432" firstAttribute="top" secondItem="223" secondAttribute="bottom" constant="22"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="432" id="name-outlet-432"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="228" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1476" y="-326"/>
+        </scene>
+        <scene sceneID="232">
+            <objects>
+                <viewController id="233" sceneMemberID="viewController" customClass="InfoViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="230"/>
+                        <viewControllerLayoutGuide type="bottom" id="231"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="234">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedRGB" red="0.42352941176470588" green="0.6705882352941176" blue="1" alpha="1"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="322" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="544" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Dev">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue id="429" destination="385" kind="show"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="656" firstItem="322" firstAttribute="height" constant="30"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="327" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="506" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue id="380" destination="9pv-A4-QxB" kind="show"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="660" firstItem="327" firstAttribute="height" constant="30"/>
+                                </constraints>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="664" translatesAutoresizingMaskIntoConstraints="NO" text="Events info here" editable="NO" selectable="NO">
+                                <rect key="frame" x="45" y="50" width="515" height="422"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.6588235294117647" green="0.85490196078431369" blue="1" alpha="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <color key="textColor" colorSpace="calibratedRGB" red="0" green="0" blue="1" alpha="1"/>
+                            </textView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="657" firstItem="234" firstAttribute="trailing" secondItem="322" secondAttribute="trailing" constant="20"/>
+                            <constraint id="658" firstItem="231" firstAttribute="top" secondItem="322" secondAttribute="bottom" constant="26"/>
+                            <constraint id="659" firstItem="322" firstAttribute="leading" secondItem="234" secondAttribute="leading" constant="20"/>
+                            <constraint id="661" firstItem="322" firstAttribute="top" secondItem="327" secondAttribute="bottom" constant="8"/>
+                            <constraint id="662" firstItem="327" firstAttribute="leading" secondItem="234" secondAttribute="leading" constant="20"/>
+                            <constraint id="663" firstItem="234" firstAttribute="trailing" secondItem="327" secondAttribute="trailing" constant="20"/>
+                            <constraint id="666" firstItem="664" firstAttribute="leading" secondItem="234" secondAttribute="leading" constant="45"/>
+                            <constraint id="667" firstItem="234" firstAttribute="trailing" secondItem="664" secondAttribute="trailing" constant="40"/>
+                            <constraint id="668" firstItem="664" firstAttribute="top" secondItem="230" secondAttribute="bottom" constant="30"/>
+                            <constraint id="670" firstItem="327" firstAttribute="top" secondItem="664" secondAttribute="bottom" constant="34"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="235" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1278" y="463"/>
+        </scene>
+        <scene sceneID="384">
+            <objects>
+                <viewController id="385" sceneMemberID="viewController" customClass="DevViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="382"/>
+                        <viewControllerLayoutGuide type="bottom" id="383"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="386">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" id="441" translatesAutoresizingMaskIntoConstraints="NO" image="newbuilding.jpg">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="442" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="14" y="544" width="576" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue id="481" destination="233" kind="show"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="684" firstItem="442" firstAttribute="height" constant="30"/>
+                                </constraints>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="665" translatesAutoresizingMaskIntoConstraints="NO" editable="NO" selectable="NO" text="This app was made for educational purposes only as part of course SIT313. &#xD;&#xD;By Edward Smith&#xD;">
+                                <rect key="frame" x="47" y="55" width="508" height="449"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="680" firstItem="441" firstAttribute="trailing" secondItem="386" secondAttribute="trailing"/>
+                            <constraint id="681" firstItem="441" firstAttribute="leading" secondItem="386" secondAttribute="leading"/>
+                            <constraint id="682" firstItem="382" firstAttribute="bottom" secondItem="441" secondAttribute="top" constant="20"/>
+                            <constraint id="683" firstItem="441" firstAttribute="bottom" secondItem="386" secondAttribute="bottom"/>
+                            <constraint id="685" firstItem="441" firstAttribute="trailing" secondItem="442" secondAttribute="trailing" constant="10"/>
+                            <constraint id="686" firstItem="442" firstAttribute="leading" secondItem="441" secondAttribute="leading" constant="14"/>
+                            <constraint id="687" firstItem="383" firstAttribute="top" secondItem="442" secondAttribute="bottom" constant="26"/>
+                            <constraint id="693" firstItem="665" firstAttribute="top" secondItem="382" secondAttribute="bottom" constant="35"/>
+                            <constraint id="694" firstItem="442" firstAttribute="top" secondItem="665" secondAttribute="bottom" constant="40"/>
+                            <constraint id="695" firstItem="441" firstAttribute="trailing" secondItem="665" secondAttribute="trailing" constant="45"/>
+                            <constraint id="696" firstItem="665" firstAttribute="leading" secondItem="441" secondAttribute="leading" constant="47"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="387" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1270" y="1313"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="burwood-map.jpg" width="1098" height="1153"/>
+        <image name="Deakin_Worldly_Logo.png" width="200" height="200"/>
+        <image name="newbuilding.jpg" width="1200" height="922"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina47"/>
+    </simulatedMetricsContainer>
+</document>
